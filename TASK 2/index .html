@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TASK 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Contact Form & To-Do List</h1>
+    <img src="/images/apex logo.png" alt="Apex Logo" class="apex-logo">
+
+  <div class="container">
+    <!-- CONTACT FORM -->
+    <section class="card">
+      <h2> Contact Form</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Your message..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- TO-DO LIST -->
+    <section class="card">
+      <h2>To-Do List</h2>
+      <div class="input-group">
+        <input type="text" id="todoInput" placeholder="Enter a task here...">
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="todoList"></ul>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
