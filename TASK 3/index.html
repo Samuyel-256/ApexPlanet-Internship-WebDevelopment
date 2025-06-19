@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TASK 3</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <h1>Quiz & Joke</h1>
+  <img src="/images/apex logo.png" alt="Apex Logo" class="apex-logo">
+  
+  <div class="main-container">
+
+    <!-- Ultimate Quiz Section -->
+    <div class="card">
+      <h2>🧠 Ultimate Quiz</h2>
+      <div class="quiz-box">
+        <p id="quiz-question"></p>
+        <div class="options">
+          <button onclick="selectOption(0)" id="btn0"></button>
+          <button onclick="selectOption(1)" id="btn1"></button>
+          <button onclick="selectOption(2)" id="btn2"></button>
+          <button onclick="selectOption(3)" id="btn3"></button>
+        </div>
+        <p id="quiz-feedback"></p>
+        <button onclick="nextQuestion()" id="nextBtn">Next</button>
+      </div>
+
+      <div class="result-box" id="resultBox">
+        <h3>🏁 Quiz Complete!</h3>
+        <p id="scoreDisplay"></p>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+      </div>
+    </div>
+
+    <!-- Joke Generator Section -->
+    <div class="card">
+      <h2>😂 Random Joke Generator</h2>
+      <button onclick="getJoke()">Get a Joke</button>
+      <p id="joke">Click the button to laugh!</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
