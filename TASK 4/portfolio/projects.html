@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 40px 60px;
+    }
+
+    .back-button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #000;
+    }
+
+    .projects-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #007bff;
+    }
+
+    .project-card p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="task.html" class="back-button">⬅ Back</a>
+  <h1>My Projects</h1>
+
+  <div class="projects-grid">
+    
+    <div class="project-card">
+      <h3>🌾 Crop Prediction</h3>
+      <p>
+        This project uses machine learning algorithms to recommend the most suitable crop for a region based on key environmental factors like soil type, rainfall, humidity, and temperature. It helps farmers optimize yield by making data-driven decisions. The model is trained on real agricultural datasets and provides results with high accuracy. This tool can be integrated into mobile apps or farmer assistance platforms.
+      </p>
+      <a href="https://github.com/Samuyel-256/crop_prediction/tree/main" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>🤟 Sign Speak</h3>
+      <p>
+        Sign Speak is an AI-powered hand gesture recognition system built using OpenCV and Mediapipe. It converts specific hand signs into readable text or audible speech in real-time, bridging the communication gap for deaf and mute individuals. The system uses a trained model on a custom dataset and is optimized for webcam-based live detection. It's built with scalability and mobile app integration in mind.
+      </p>
+      <a href="https://github.com/Samuyel-256/Sign-speak-the-silent-communicator" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>⚗️ Chemical Reaction Predictor</h3>
+      <p>
+        A web-based tool that predicts the success probability of chemical reactions based on input parameters like temperature, pH, and concentration. It uses an Artificial Neural Network (ANN) built with TensorFlow/Keras and is deployed using Flask. The system is trained on a dataset of past experiments and is designed for researchers and students working in the field of chemistry and pharmaceuticals.
+      </p>
+      <a href="https://github.com/santhosh220z/CHEMICAL-REACTIONS-PROJECT" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+         <h3>🎮 Video Game Recommendation System</h3>
+            <p>
+             This project uses a Deep Learning model (Feed Forward Neural Network) to recommend personalized video games based on user preferences and past ratings. It includes feedback-based learning, genre analysis, and allows users to explore games across different categories like Battle, Puzzle, Casual, and more. Built with Python, HTML, CSS, and integrated with a responsive UI for a smooth user experience.
+            </p>
+          <a href="https://github.com/LeelaSathwika/Videogame_recommendation" target="_blank"></a>
+    </div>
+
+
+    <div class="project-card">
+      <h3>✍️ Virtual Pen</h3>
+      <p>
+        Virtual Pen is a gesture-based drawing tool that lets users draw on a digital canvas using just their finger. Powered by computer vision (OpenCV), it detects finger positions and interprets gestures to switch between drawing, erasing, and color modes. It simulates the functionality of a stylus without physical hardware, ideal for interactive whiteboards and creative apps.
+      </p>
+      <a href="https://github.com/Samuyel-256/Virtual-Pen" target="_blank">GitHub</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

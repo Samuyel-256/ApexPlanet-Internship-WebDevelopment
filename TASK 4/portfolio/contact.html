@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-box {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .contact-box h1 {
+      margin-bottom: 10px;
+      font-size: 32px;
+      color: #007bff;
+    }
+
+    .contact-box p {
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #0056b3;
+      box-shadow: 0 0 8px #007bff;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    button {
+      padding: 12px 25px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .tagline {
+      margin-top: 30px;
+      font-style: italic;
+      font-size: 14px;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .contact-box {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="task.html" class="back-button">⬅ Back</a>
+
+  <div class="contact-box">
+    <h1>Let's Connect! 💬</h1>
+    <p>Have a project idea, a question, or just want to say hi? Drop me a message and I’ll reply faster than a bot 🚀</p>
+    
+    <form action="thankyou.html" method="get">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Drop your thoughts here..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="tagline">“Tech with Telugu Swag — Let’s build something epic together!” 😎🔥</div>
+  </div>
+
+</body>
+</html>
