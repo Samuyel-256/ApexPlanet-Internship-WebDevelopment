@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #007bff;
+  font-size: 36px;
+}
+
+.tagline {
+  font-style: italic;
+  color: #555;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.blog-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.blog-card h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #007bff;
+}
+
+.blog-card p {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+.post-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.post-container .post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.post-container article p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #444;
+}

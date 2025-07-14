@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧠 What is AI? – Telugu Tech Blog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .tagline {
+      font-size: 14px;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    .post-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px 20px;
+      background-color: #fff;
+    }
+
+    .post-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    article p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🧠 What is AI? A Beginner’s Guide</h1>
+    <p class="tagline">Posted on July 1, 2025 • Telugu Tech Babu</p>
+  </header>
+
+  <main class="post-container">
+    <img src="https://res.cloudinary.com/ddxtfqmt4/image/upload/v1750915055/ai_book_ztksts.jpg" alt="AI Image" class="post-image" loading="lazy" />
+
+    <article>
+      <p>Artificial Intelligence (AI) is the ability of machines to mimic human intelligence like learning, problem-solving, and decision-making.</p>
+      <p>From Siri and Alexa to ChatGPT and self-driving cars — AI is transforming industries globally. It helps Netflix recommend shows, Google predict search queries, and even powers language translation apps!</p>
+      <p>There are 3 major types: Narrow AI, General AI, and Super AI (still theoretical). Most systems today use Narrow AI — focused on specific tasks.</p>
+      <p>Stick around as we explore Machine Learning, Neural Networks, and how you can build your first AI project from scratch! 😎</p>
+    </article>
+
+    <a href="index.html" class="read-more">⬅ Back to Blog</a>
+  </main>
+
+  <footer>
+    <p>© 2025 Telugu Tech Babu. All rights reserved. 🔥</p>
+  </footer>
+
+</body>
+</html>
+
+  </footer>
+
+  <!-- 🧠 Script for Comment Handling -->
+  <script>
+    const form = document.getElementById('commentForm');
+    const display = document.getElementById('commentsDisplay');
+
+    // Load stored comments from localStorage
+    window.onload = () => {
+      const savedComments = JSON.parse(localStorage.getItem('comments')) || [];
+      savedComments.forEach(c => {
+        const commentEl = document.createElement('p');
+        commentEl.innerHTML = `<strong>${c.user}:</strong> ${c.text}`;
+        display.appendChild(commentEl);
+      });
+    };
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const user = document.getElementById('username').value;
+      const comment = document.getElementById('comment').value;
+
+      const newComment = document.createElement('p');
+      newComment.innerHTML = `<strong>${user}:</strong> ${comment}`;
+      display.appendChild(newComment);
+
+      // Save comment to localStorage
+      const stored = JSON.parse(localStorage.getItem('comments')) || [];
+      stored.push({ user, text: comment });
+      localStorage.setItem('comments', JSON.stringify(stored));
+
+      form.reset();
+    });
+  </script>
+</body>
+</html>
